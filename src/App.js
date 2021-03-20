@@ -24,11 +24,12 @@ function App() {
       </h1>
       {/* {Sdata.map(ncard)} */}
       {Sdata.map((value, index, myArray) => {
-        console.log("Value: ", value);
+        {/* console.log("Value: ", value);
         console.log("Index: ", index);
-        console.log("Array: ", myArray);
+        console.log("Array: ", myArray); */}
         return (
           <Cards
+            key={value.id}
             imgsrc={value.imgsrc}
             title={value.title}
             sname={value.sname}
